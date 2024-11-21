@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{ 
+   background-color: black;
+   color: white;
+   
+
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-position: cover;
+    background-size:center;
+    background-image: url("back img.jpg");
+    
+}
+
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    
+}
+.left{
+    font-size: 50px;
+    
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 20px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+ }
+ nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: blueviolet;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+ }
+
+ nav ul li a:hover::after{
+    color: blueviolet;
+    font-size: 1.2rem;
+    width:100%
+
+ }
+ .header-text{
+    margin-top: 10%;
+    font-size: 30px;
+    margin-left: 10%;
+ }
+
+ .header-text h1{
+    font-size: 50px;
+    margin-top: 20px;
+ }
+    
+ .header-text h1 span{
+    color: blueviolet;
+ }
+
+
+ #about{
+    padding: 80px 0;
+    color: #ababab;
+
+ }
+ .row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+ }
+ .left-2{
+    flex-basis: 35%;
+ }
+
+ .left-2 img{
+        width: 100%;
+        border-radius: 15px;
+        margin-left: 50px;
+        height: 85%;
+ }
+
+ .right-2{
+    flex-basis: 60%;
+ }
+ .subtitle{
+    font-size: 60px;
+    font-weight: 400;
+    color: white;
+ }
+
+ .tabtitle{
+    display: flex;
+    margin: 20px 0 40px;
+
+ }
+ .tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+ }
+ .tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position:absolute;
+    bottom: -8px;
+    left: 0;
+    transition: 0.5s;
+    background:blueviolet;
+ }
+ .tab-links.active-link::after{
+    width: 50%;
+
+ }
+ .tabcontents ul li{
+    list-style: none;
+    margin:10px 0;
+ }
+ .tabcontents ul li span{
+    color:white;
+    font-size: 14px;
+ }
+ .tabcontents
+ {
+   display: none;
+ }
+ .tabcontents.active-tab
+ {
+    display: block;
+ }
+ .tabcontents.active-tab b{
+   font-size: 20px;
+ }
+
+ #projects
+ {
+   padding: 30px 0;
+   margin-left: 5%;
+   margin-bottom: 50px;
+ }
+ 
+ .projects-list
+ {
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+   grid-gap:40px;
+ }
+.projects-list div
+{
+   background: #262626;
+   padding: 40px;
+   font-size: 13px;
+   font-weight: 300;
+   border-radius: 15px;
+   margin-right: 20px;
+   transition:background 0.5s,transform 0.5s;
+}
+.projects-list div h2
+{
+   font-size: 30px;
+   font-weight: 500;
+   margin-bottom: 15px;
+}
+.projects-list div a
+{
+   text-decoration: none;
+   color:#fff;
+   font-size: 12px;
+   margin-top: 20px;
+   display:inline-block;
+}
+ .projects-list div:hover
+ {
+   background: #aa3faa;
+   transform: translate(-10px);
+ }
+
+ .contact-left
+ {
+   flex-basis: 35%;
+
+ }
+ .contact-right
+ {
+   flex-basis: 60%;
+   margin-right: 5%;
+   
+ }
+ .contact-left h1.subtitle 
+ {
+   margin-left: 15%;
+ }
+ .contact-left p 
+ {
+   margin-left: 20%;
+   margin-top: 15px;
+ }
+ .contact-left p i
+ {
+     color: white;
+     margin-right: 15px;
+     font-size: 25px;
+ }
+ .social-icons
+ {
+   margin-top:30px;
+ }
+ .social-icons a{
+   text-decoration: none;
+   font-size: 30px;
+   margin-right: 15px;
+   color:#ababab;
+   display: inline-block;
+
+ }
+ .social-icons a:hover
+ {
+   color:#ff004f;
+   transform: translateY(-5px);
+ }
+ .btn.btn2{
+   background-color: #ff004f;
+   display: inline-block;
+   margin-left: 20%;
+ }
+ .contact-right form
+ {
+   width: 100%;
+
+ }
+ form input, form textarea
+ {
+   width: 100%;
+   border: 0;
+   outline: none;
+   background-color: #262626;
+   padding: 15px;
+   margin: 15px 0;
+   color: #fff;
+   font-size: 18px;
+   border-radius: 6px;
+
+ }
+ form .btnbtn2{
+   padding: 14px 60px;
+   font-size: 18px;
+   margin-top: 20px;
+   cursor:pointer;
+ }
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
